@@ -1,4 +1,5 @@
 import {useState} from "react";
+import "./App.css";
 
 function App() {
   const [ideias, setIdeias] = useState([]);
@@ -24,6 +25,15 @@ function App() {
     setErro("");
   }
 
+  function marcarFeita(id){
+    const novasIdeias = ideias.map((ideia) => 
+    ideia.id === id
+    ?{...ideia, feita: !ideia.feita}
+    :ideia
+    )
+    setIdeias(novasIdeias)
+  }
+
   return(
     <div>
     <h1>💡Painel de ideias</h1>
@@ -44,7 +54,16 @@ function App() {
     <ul>
       {ideias.map((ideia) => (
         <li key={ideia.id}>
-          {ideia.texto}
+          <input type="checkbox"
+          checked={ideia.feita}
+          onChange={() => marcarFeita(ideia.id)}
+          />
+
+          <span
+          className={ideia.feita ? "concluida" : ""}
+          >
+            {ideia.texto}
+          </span>
         </li>
       ))}
     </ul>
