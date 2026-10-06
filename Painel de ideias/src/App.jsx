@@ -40,6 +40,14 @@ function App() {
     </form>
 
     {erro && <p>{erro}</p>}
+
+    <ul>
+      {ideias.map((ideia) => (
+        <li key={ideia.id}>
+          {ideia.texto}
+        </li>
+      ))}
+    </ul>
     </div>
   )
 }
