@@ -10,7 +10,7 @@ function App() {
     event.preventDefault();
 
     if(novaIdeia.trim() === ""){
-      setErro("Digite uma ideia válida");
+      setErro("Digite sua ideia antes de adicionar.");
       return;
     }
 
@@ -55,10 +55,12 @@ function App() {
     <form onSubmit={adicionarIdeia}>
       <input type="text" 
       value={novaIdeia}
-      onChange={(e) => setNovaIdeia(e.target.value)}
+      onChange={(e) => {
+      setNovaIdeia(e.target.value);
+      setErro("");
+      }}
       placeholder="Digite uma ideia"
        />
-
        <button type="submit">Adicionar</button>
     </form>
 
