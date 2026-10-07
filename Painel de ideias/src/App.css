@@ -1,3 +1,117 @@
 .concluida {
   text-decoration: line-through;
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin: 0 0 25px 0;
+  color: #222;
+  text-align: center;
+}
+
+.container > p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #7c3aed;
+}
+
+form button {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #6d28d9;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fafafa;
+  border: 1px solid #e8e8e8;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+li span {
+  flex: 1;
+}
+
+.concluida {
+  text-decoration: line-through;
+  color: #888;
+}
+
+li button {
+  background: #ef4444;
+  color: white;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background: #dc2626;
+}
+
+footer {
+  margin-top: 25px;
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid #e5e5e5;
+  color: #555;
+  font-weight: bold;
+}
+
+.erro {
+  color: #dc2626;
+  margin-bottom: 15px;
+}

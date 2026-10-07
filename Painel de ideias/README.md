@@ -3,24 +3,20 @@ Painel de Ideias:
 Projeto desenvolvido com React e Vite para cadastrar, concluir e remover ideias.
 
 COMO EXECUTAR:
-
-Instale as dependências:
-
+Primeiro instale as dependências:
 npm install
 
-Inicie o projeto:
-
+E inicie o projeto com:
 npm run dev
 
-FUNCIONALIDADES:
-
+FUNCIONALIDADES DO PROJETO:
  Adicionar ideias
  Marcar ideias como concluídas
  Remover ideias
  Contador de ideias
  Validação de campo vazio
 
-DECISÕES ADOTADAS:
+MINHAS DECISÕES FORAM:
 
  Utilização de React com componentes funcionais.
  Gerenciamento de estado com useState.

@@ -48,7 +48,7 @@ function App() {
   ).length
 
   return(
-    <div>
+    <div  className="container">
     <h1>💡Painel de ideias</h1>
     <p>Anote suas ideias para não perde-las</p>
 
