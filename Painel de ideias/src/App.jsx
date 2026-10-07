@@ -34,6 +34,13 @@ function App() {
     setIdeias(novasIdeias)
   }
 
+  function removerIdeia(id){
+    const novasIdeias = ideias.filter(
+      (ideia) => ideia.id !==id
+    );
+    setIdeias(novasIdeias)
+  }
+
   return(
     <div>
     <h1>💡Painel de ideias</h1>
@@ -64,6 +71,10 @@ function App() {
           >
             {ideia.texto}
           </span>
+
+          <button onClick={() => removerIdeia(ideia.id)}>
+            X
+          </button>
         </li>
       ))}
     </ul>
